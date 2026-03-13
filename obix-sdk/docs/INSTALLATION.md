@@ -60,6 +60,12 @@ for pkg in packages/bindings/*; do
 done
 ```
 
+```ps1
+Get-ChildItem -Directory "packages/bindings" | ForEach-Object {
+    npm publish --workspace $_.FullName --access public
+}
+```
+
 ### Drivers (`packages/drivers/*`)
 
 ```bash
@@ -67,7 +73,11 @@ for pkg in packages/drivers/*; do
   npm publish --workspace "$pkg" --access public
 done
 ```
-
+```ps1
+Get-ChildItem -Directory "packages/drivers" | ForEach-Object {
+    npm publish --workspace $_.FullName --access public
+}
+```
 ### SDK (`packages/sdk/*`)
 
 ```bash
@@ -76,6 +86,13 @@ for pkg in packages/sdk/*; do
 done
 ```
 
+```ps1
+Get-ChildItem -Directory "packages/sdk" | ForEach-Object {
+    npm publish --workspace $_.FullName --access public
+}
+```
+
+```
 > Tip: run `npm run build` before each batch to ensure artifacts are current.
 
 ## 5) Consumer Install Examples
