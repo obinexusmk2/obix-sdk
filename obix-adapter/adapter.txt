@@ -1,0 +1,17 @@
+.
+├── README.md
+├── adapter
+│   └── DOPAdapter.js
+├── adapter.txt
+├── components
+│   └── ButtonLogic.js
+├── main.js
+├── package.json
+├── render
+│   ├── renderFunc.js
+│   └── renderOOP.js
+└── syntax
+    ├── domain_sepcific.tsx
+    └── example.tsx
+
+5 directories, 10 files
